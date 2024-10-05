@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
+    "\\DataAccessLayer",
+    "\\DataAccessLayer\\ConeccionBD",
     "\\PresentationLayer"
   ],
-  "SelectedNode": "\\PresentationLayer\\VistaForm.cs",
+  "SelectedNode": "\\InventarioProductos.sln",
   "PreviewInSolutionExplorer": false
 }
