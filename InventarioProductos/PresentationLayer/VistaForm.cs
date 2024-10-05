@@ -16,5 +16,23 @@ namespace PresentationLayer
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MueblesForm mueblesForm = new MueblesForm();
+            mueblesForm.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ElectricosForm electricosForm = new ElectricosForm();
+            electricosForm.ShowDialog();
+        }
+
+        private void btnAlimentos_Click(object sender, EventArgs e)
+        {
+            AlimentosForm alimentosForm = new AlimentosForm();
+            alimentosForm.ShowDialog();
+        }
     }
 }
