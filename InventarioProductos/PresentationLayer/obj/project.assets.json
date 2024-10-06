@@ -1705,19 +1705,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\DAVID.M\\.nuget\\packages\\": {}
+    "C:\\Users\\MINEDUCYT\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\DAVID.M\\group9\\InventarioProductos\\PresentationLayer\\PresentationLayer.csproj",
+      "projectUniqueName": "C:\\Users\\MINEDUCYT\\Desktop\\group9\\InventarioProductos\\PresentationLayer\\PresentationLayer.csproj",
       "projectName": "PresentationLayer",
-      "projectPath": "C:\\Users\\DAVID.M\\group9\\InventarioProductos\\PresentationLayer\\PresentationLayer.csproj",
-      "packagesPath": "C:\\Users\\DAVID.M\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\DAVID.M\\group9\\InventarioProductos\\PresentationLayer\\obj\\",
+      "projectPath": "C:\\Users\\MINEDUCYT\\Desktop\\group9\\InventarioProductos\\PresentationLayer\\PresentationLayer.csproj",
+      "packagesPath": "C:\\Users\\MINEDUCYT\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\MINEDUCYT\\Desktop\\group9\\InventarioProductos\\PresentationLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\DAVID.M\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\MINEDUCYT\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1725,14 +1725,15 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-            "C:\\Users\\DAVID.M\\group9\\InventarioProductos\\DataAccessLayer\\DataAccessLayer.csproj": {
-              "projectPath": "C:\\Users\\DAVID.M\\group9\\InventarioProductos\\DataAccessLayer\\DataAccessLayer.csproj"
+            "C:\\Users\\MINEDUCYT\\Desktop\\group9\\InventarioProductos\\DataAccessLayer\\DataAccessLayer.csproj": {
+              "projectPath": "C:\\Users\\MINEDUCYT\\Desktop\\group9\\InventarioProductos\\DataAccessLayer\\DataAccessLayer.csproj"
             }
           }
         }

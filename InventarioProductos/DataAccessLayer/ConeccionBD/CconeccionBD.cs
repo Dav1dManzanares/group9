@@ -13,7 +13,7 @@ namespace DataAccessLayer.ConeccionBD
 
         public CconeccionBD()
         {
-            _connectionString = "Data Source=MANZANARES\\SQLEXPRESS;Initial Catalog=InventarioProductos;Integrated Security=True;Trust Server Certificate=True";
+            _connectionString = "Data Source=DESKTOP-NFDMETJ\\SQLEXPRESS;Initial Catalog=InventarioProductos;Integrated Security=True;Trust Server Certificate=True";
         }
 
         public SqlConnection GetCconeccion()
