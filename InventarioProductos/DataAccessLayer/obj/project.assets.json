@@ -585,6 +585,16 @@
         "runtime": {
           "lib/netcoreapp2.1/_._": {}
         }
+      },
+      "CommonLayer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/CommonLayer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CommonLayer.dll": {}
+        }
       }
     }
   },
@@ -1679,10 +1689,16 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "CommonLayer/1.0.0": {
+      "type": "project",
+      "path": "../CommonLayer/CommonLayer.csproj",
+      "msbuildProject": "../CommonLayer/CommonLayer.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "CommonLayer >= 1.0.0",
       "Microsoft.Data.SqlClient >= 5.2.2"
     ]
   },
@@ -1713,7 +1729,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\MINEDUCYT\\Desktop\\group9\\InventarioProductos\\CommonLayer\\CommonLayer.csproj": {
+              "projectPath": "C:\\Users\\MINEDUCYT\\Desktop\\group9\\InventarioProductos\\CommonLayer\\CommonLayer.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

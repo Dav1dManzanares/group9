@@ -1,4 +1,5 @@
-﻿using Microsoft.Data.SqlClient;
+﻿using CommonLayer.Entidades;
+using Microsoft.Data.SqlClient;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -20,7 +21,7 @@ namespace DataAccessLayer.ConeccionBD
 
         public DataTable ObtenerAlimentos()
         {
-            using(SqlConnection con = _conexion.GetCconeccion())
+            using (SqlConnection con = _conexion.GetCconeccion())
             {
                 con.Open();
                 string query = "SELECT * FROM Alimentos";
@@ -33,41 +34,38 @@ namespace DataAccessLayer.ConeccionBD
             }
         }
 
-        public void InsertarAlimentos(string nombre,float precio, int cantidad)
+        public void InsertarAlimentos(EntidadesAlimentos entidadesAlimentos)
         {
             using (SqlConnection con = _conexion.GetCconeccion())
             {
+                string query = "INSERT INTO Alimentos VALUES (@nombre, @precio, @cantidad)";
+                SqlCommand command = new SqlCommand(query, con);
+                command.Parameters.AddWithValue("@nombre", entidadesAlimentos.nombre);
+                command.Parameters.AddWithValue("@precio", entidadesAlimentos.precio);
+                command.Parameters.AddWithValue("@cantidad", entidadesAlimentos.cantidad);
+
                 con.Open();
-                string query = "INSERT INTO Alimentos (nombre, precio, cantidad) VALUES (@nombre, @precio, @cantidad)";
-                using (SqlCommand cmd = new SqlCommand(query, con))
-                {
-                    cmd.Parameters.AddWithValue("@nombre", nombre);
-                    cmd.Parameters.AddWithValue("@precio", precio);
-                    cmd.Parameters.AddWithValue("@cantidad", cantidad);
-                    cmd.ExecuteNonQuery();
-                }
+                command.ExecuteNonQuery();
             }
         }
 
-        public void ActualizarAlimentos(int id, string nombre, float precio, int cantidad)
+        public void ActualizarAlimento(EntidadesAlimentos entidadesAlimentos)
         {
             using (SqlConnection con = _conexion.GetCconeccion())
             {
-                con.Open();
+                con.Open();  // Asegúrate de abrir la conexión antes de ejecutar el comando
                 string query = "UPDATE Alimentos SET nombre=@nombre, precio=@precio, cantidad=@cantidad WHERE id=@id";
-                using (SqlCommand cmd = new SqlCommand(query, con))
-                {
-                    cmd.Parameters.AddWithValue("@id", id);
-                    cmd.Parameters.AddWithValue("@nombre", nombre);
-                    cmd.Parameters.AddWithValue("@precio", precio);
-                    cmd.Parameters.AddWithValue("@cantidad", cantidad);
-                    cmd.ExecuteNonQuery();
-
-                }
+                SqlCommand command = new SqlCommand(query, con);
+                command.Parameters.AddWithValue("@nombre", entidadesAlimentos.nombre);
+                command.Parameters.AddWithValue("@precio", entidadesAlimentos.precio);
+                command.Parameters.AddWithValue("@cantidad", entidadesAlimentos.cantidad);
+                command.Parameters.AddWithValue("@id", entidadesAlimentos.id);
+                command.ExecuteNonQuery();
             }
         }
 
-        public void EliminarAlimentos(int id)
+
+        public void EliminarAlimento(int id)
         {
             using (SqlConnection con = _conexion.GetCconeccion())
             {
@@ -81,4 +79,8 @@ namespace DataAccessLayer.ConeccionBD
             }
         }
     }
+
 }
+
+   
+

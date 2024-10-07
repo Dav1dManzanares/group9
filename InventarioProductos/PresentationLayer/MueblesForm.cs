@@ -1,4 +1,7 @@
-﻿using DataAccessLayer;
+﻿using BusinessLayer.servicios;
+using CommonLayer.Entidades;
+using DataAccessLayer;
+using DataAccessLayer.ConeccionBD;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,11 +17,14 @@ namespace PresentationLayer
     public partial class MueblesForm : Form
     {
         private MueblesBD _mueblesBD;
+        private MueblesServicios _mueblesServicio;
+        bool nuevo = false;
 
         public MueblesForm()
         {
             InitializeComponent();
             _mueblesBD = new MueblesBD();
+            _mueblesServicio = new MueblesServicios();
             CargarMuebles();
         }
 
@@ -28,56 +34,98 @@ namespace PresentationLayer
             dvgMuebles.DataSource = _mueblesBD.ObtenerMuebles();
         }
 
+        private void LimpiarCampos()
+        {
+            txtNombre.Text = "";
+            txtPrecio.Text = "";
+            txtCantidad.Text = "";
+        }
+
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             string nombre = txtNombre.Text;
-            float precio = float.Parse(txtPrecio.Text);
-            int cantidad = int.Parse(txtCantidad.Text);
+            float precio;
+            int cantidad;
 
-            _mueblesBD.InsertarMueble(nombre, precio, cantidad);
+            // Validaciones
+            if (string.IsNullOrEmpty(nombre) ||
+                !float.TryParse(txtPrecio.Text, out precio) ||
+                !int.TryParse(txtCantidad.Text, out cantidad))
+            {
+                MessageBox.Show("Por favor, complete todos los campos correctamente");
+                return;
+            }
+
+            EntidadesMuebles entidadesMuebles = new EntidadesMuebles
+            {
+                nombre = nombre,
+                precio = precio,
+                cantidad = cantidad
+            };
+
+            if (nuevo)
+            {
+                _mueblesServicio.GuardarElectricos(entidadesMuebles);
+                MessageBox.Show("Registro guardado correctamente.");
+            }
+            else
+            {
+
+                if (dvgMuebles.SelectedRows.Count > 0)
+                {
+                    int id = int.Parse(dvgMuebles.CurrentRow.Cells[0].Value.ToString());
+                    entidadesMuebles.id = id;
+                    _mueblesServicio.ModificarElectricos(entidadesMuebles);
+                    MessageBox.Show("Registro modificado correctamente.");
+                }
+            }
+
             CargarMuebles();
             LimpiarCampos();
+            nuevo = true;
         }
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
-            int id = int.Parse(txtId.Text);
-            string nombre = txtNombre.Text;
-            float precio = float.Parse(txtPrecio.Text);
-            int cantidad = int.Parse(txtCantidad.Text);
+            if (dvgMuebles.SelectedRows.Count > 0)
+            {
+                txtNombre.Text = dvgMuebles.CurrentRow.Cells[1].Value.ToString();
+                txtPrecio.Text = dvgMuebles.CurrentRow.Cells[2].Value.ToString();
+                txtCantidad.Text = dvgMuebles.CurrentRow.Cells[3].Value.ToString();
 
-            _mueblesBD.ActualizarMueble(id, nombre, precio, cantidad);
-            CargarMuebles();
-            LimpiarCampos();
+                nuevo = false;
+            }
+            else
+            {
+                MessageBox.Show("Debe seleccionar una fila antes de editar");
+            }
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            int id = int.Parse(txtId.Text);
+            if (dvgMuebles.SelectedRows.Count < 1)
+            {
+                MessageBox.Show("Selecciona una fila");
+            }
+            else
+            {
+                var borrarFila = new DialogResult();
+                borrarFila = MessageBox.Show("Está seguro que desea eliminar el dato?", "Confirmar", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
-            _mueblesBD.EliminarMueble(id);
-            CargarMuebles();
-            LimpiarCampos();
+                if (borrarFila == DialogResult.Yes)
+                {
+                    int id = int.Parse(dvgMuebles.CurrentRow.Cells[0].Value.ToString());
+                    _mueblesBD.EliminarAlimento(id);
+                    CargarMuebles();
+                }
+            }
         }
 
-        private void LimpiarCampos()
-        {
-            txtId.Clear();
-            txtNombre.Clear();
-            txtPrecio.Clear();
-            txtCantidad.Clear();
-        }
+        
 
         private void dvgMuebles_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex >= 0)
-            {
-                DataGridViewRow row = dvgMuebles.Rows[e.RowIndex];
-                txtId.Text = row.Cells["id"].Value.ToString();
-                txtNombre.Text = row.Cells["nombre"].Value.ToString();
-                txtPrecio.Text = row.Cells["precio"].Value.ToString();
-                txtCantidad.Text = row.Cells["cantidad"].Value.ToString();
-            }
+            
         }
     }
 }

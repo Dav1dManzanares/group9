@@ -24,3 +24,6 @@ C:\Users\MINEDUCYT\Desktop\group9\InventarioProductos\DataAccessLayer\obj\Debug\
 C:\Users\MINEDUCYT\Desktop\group9\InventarioProductos\DataAccessLayer\obj\Debug\net8.0\refint\DataAccessLayer.dll
 C:\Users\MINEDUCYT\Desktop\group9\InventarioProductos\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.pdb
 C:\Users\MINEDUCYT\Desktop\group9\InventarioProductos\DataAccessLayer\obj\Debug\net8.0\ref\DataAccessLayer.dll
+C:\Users\MINEDUCYT\Desktop\group9\InventarioProductos\DataAccessLayer\bin\Debug\net8.0\CommonLayer.dll
+C:\Users\MINEDUCYT\Desktop\group9\InventarioProductos\DataAccessLayer\bin\Debug\net8.0\CommonLayer.pdb
+C:\Users\MINEDUCYT\Desktop\group9\InventarioProductos\DataAccessLayer\obj\Debug\net8.0\DataAcce.E67BD773.Up2Date

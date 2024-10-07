@@ -1,4 +1,5 @@
-﻿using Microsoft.Data.SqlClient;
+﻿using CommonLayer.Entidades;
+using Microsoft.Data.SqlClient;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -32,39 +33,38 @@ namespace DataAccessLayer.ConeccionBD
             }
         }
 
-        public void InsertarElectricos(string nombre, float precio, int cantidad)
+        public void InsertarElectricos(EntidadesElectricos entidadesElectricos)
         {
             using (SqlConnection con = _conexion.GetCconeccion())
             {
+                string query = "INSERT INTO ProductosElectronics VALUES (@nombre, @precio, @cantidad)";
+                SqlCommand command = new SqlCommand(query, con);
+                command.Parameters.AddWithValue("@nombre", entidadesElectricos.nombre);
+                command.Parameters.AddWithValue("@precio", entidadesElectricos.precio);
+                command.Parameters.AddWithValue("@cantidad", entidadesElectricos.cantidad);
+
                 con.Open();
-                string query = "INSERT INTO ProductosElectronics (nombre, precio, cantidad) VALUES (@nombre, @precio, @cantidad)";
-                using(SqlCommand cmd = new SqlCommand(query, con))
-                {
-                    cmd.Parameters.AddWithValue("@nombre", nombre);
-                    cmd.Parameters.AddWithValue("@precio", precio);
-                    cmd.Parameters.AddWithValue("@cantidad", cantidad);
-                    cmd.ExecuteNonQuery();
-                }
+                command.ExecuteNonQuery();
             }
         }
 
-        public void ActualizarElectricos(int id, string nombre, float precio, int cantidad)
+
+        public void ActualizarElectricos(EntidadesElectricos entidadesElectricos)
         {
             using (SqlConnection con = _conexion.GetCconeccion())
             {
-                con.Open();
+                con.Open();  // Asegúrate de abrir la conexión antes de ejecutar el comando
                 string query = "UPDATE ProductosElectronics SET nombre=@nombre, precio=@precio, cantidad=@cantidad WHERE id=@id";
-                using (SqlCommand cmd = new SqlCommand(query, con))
-                {
-                    cmd.Parameters.AddWithValue("@id", id);
-                    cmd.Parameters.AddWithValue("@nombre", nombre);
-                    cmd.Parameters.AddWithValue("@precio", precio);
-                    cmd.Parameters.AddWithValue("@cantidad", cantidad);
-                    cmd.ExecuteNonQuery();
+                SqlCommand command = new SqlCommand(query, con);
+                command.Parameters.AddWithValue("@nombre", entidadesElectricos.nombre);
+                command.Parameters.AddWithValue("@precio", entidadesElectricos.precio);
+                command.Parameters.AddWithValue("@cantidad", entidadesElectricos.cantidad);
+                command.Parameters.AddWithValue("@id", entidadesElectricos.id);
 
-                }
+                command.ExecuteNonQuery();  
             }
         }
+
 
         public void EliminarElectricos(int id)
         {

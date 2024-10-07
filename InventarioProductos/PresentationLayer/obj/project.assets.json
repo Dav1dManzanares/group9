@@ -586,10 +586,35 @@
           "lib/netcoreapp2.1/_._": {}
         }
       },
+      "BusinessLayer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "CommonLayer": "1.0.0",
+          "DataAccessLayer": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/BusinessLayer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BusinessLayer.dll": {}
+        }
+      },
+      "CommonLayer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/CommonLayer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CommonLayer.dll": {}
+        }
+      },
       "DataAccessLayer/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "CommonLayer": "1.0.0",
           "Microsoft.Data.SqlClient": "5.2.2"
         },
         "compile": {
@@ -1693,6 +1718,16 @@
         "version.txt"
       ]
     },
+    "BusinessLayer/1.0.0": {
+      "type": "project",
+      "path": "../BusinessLayer/BusinessLayer.csproj",
+      "msbuildProject": "../BusinessLayer/BusinessLayer.csproj"
+    },
+    "CommonLayer/1.0.0": {
+      "type": "project",
+      "path": "../CommonLayer/CommonLayer.csproj",
+      "msbuildProject": "../CommonLayer/CommonLayer.csproj"
+    },
     "DataAccessLayer/1.0.0": {
       "type": "project",
       "path": "../DataAccessLayer/DataAccessLayer.csproj",
@@ -1701,6 +1736,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
+      "BusinessLayer >= 1.0.0",
       "DataAccessLayer >= 1.0.0"
     ]
   },
@@ -1732,6 +1768,9 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
+            "C:\\Users\\MINEDUCYT\\Desktop\\group9\\InventarioProductos\\BusinessLayer\\BusinessLayer.csproj": {
+              "projectPath": "C:\\Users\\MINEDUCYT\\Desktop\\group9\\InventarioProductos\\BusinessLayer\\BusinessLayer.csproj"
+            },
             "C:\\Users\\MINEDUCYT\\Desktop\\group9\\InventarioProductos\\DataAccessLayer\\DataAccessLayer.csproj": {
               "projectPath": "C:\\Users\\MINEDUCYT\\Desktop\\group9\\InventarioProductos\\DataAccessLayer\\DataAccessLayer.csproj"
             }

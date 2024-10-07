@@ -1,4 +1,6 @@
-﻿using DataAccessLayer.ConeccionBD;
+﻿using BusinessLayer.servicios;
+using CommonLayer.Entidades;
+using DataAccessLayer.ConeccionBD;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,10 +16,13 @@ namespace PresentationLayer
     public partial class AlimentosForm : Form
     {
         private AlimentosBD _alimentosBD;
+        private AlimentosServicios _alimentosServicios;
+        bool nuevo = false;
         public AlimentosForm()
         {
             InitializeComponent();
             _alimentosBD = new AlimentosBD();
+            _alimentosServicios = new AlimentosServicios();
             CargarAlimentos();
         }
 
@@ -27,36 +32,96 @@ namespace PresentationLayer
 
         }
 
+        private void LimpiarCampos()
+        {
+            txtNombre.Text = "";
+            txtPrecio.Text = "";
+            txtCantidad.Text = "";
+        }
+
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             string nombre = txtNombre.Text;
-            float precio = float.Parse(txtPrecio.Text);
-            int cantidad = int.Parse(txtCantidad.Text);
+            float precio;
+            int cantidad;
 
-            _alimentosBD.InsertarAlimentos(nombre, precio, cantidad);
+            // Validaciones
+            if (string.IsNullOrEmpty(nombre) ||
+                !float.TryParse(txtPrecio.Text, out precio) ||
+                !int.TryParse(txtCantidad.Text, out cantidad))
+            {
+                MessageBox.Show("Por favor, complete todos los campos correctamente");
+                return;
+            }
+
+            EntidadesAlimentos entidadesAlimentos = new EntidadesAlimentos
+            {
+                nombre = nombre,
+                precio = precio,
+                cantidad = cantidad
+            };
+
+            if (nuevo)
+            {
+                _alimentosServicios.GuardarElectricos(entidadesAlimentos);
+                MessageBox.Show("Registro guardado correctamente.");
+            }
+            else
+            {
+
+                if (dvgAlimentos.SelectedRows.Count > 0)
+                {
+                    int id = int.Parse(dvgAlimentos.CurrentRow.Cells[0].Value.ToString());
+                    entidadesAlimentos.id = id;
+                    _alimentosServicios.ModificarElectricos(entidadesAlimentos);
+                    MessageBox.Show("Registro modificado correctamente.");
+                }
+            }
+
             CargarAlimentos();
+            LimpiarCampos();
+            nuevo = true;
         }
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
+            if (dvgAlimentos.SelectedRows.Count > 0)
+            {
+                txtNombre.Text = dvgAlimentos.CurrentRow.Cells[1].Value.ToString();
+                txtPrecio.Text = dvgAlimentos.CurrentRow.Cells[2].Value.ToString();
+                txtCantidad.Text = dvgAlimentos.CurrentRow.Cells[3].Value.ToString();
 
+                nuevo = false;
+            }
+            else
+            {
+                MessageBox.Show("Debe seleccionar una fila antes de editar");
+            }
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
+            if (dvgAlimentos.SelectedRows.Count < 1)
+            {
+                MessageBox.Show("Selecciona una fila");
+            }
+            else
+            {
+                var borrarFila = new DialogResult();
+                borrarFila = MessageBox.Show("Está seguro que desea eliminar el dato?", "Confirmar", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
+                if (borrarFila == DialogResult.Yes)
+                {
+                    int id = int.Parse(dvgAlimentos.CurrentRow.Cells[0].Value.ToString());
+                    _alimentosBD.EliminarAlimento(id);
+                    CargarAlimentos();
+                }
+            }
         }
 
         private void dvgAlimentos_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex >= 0)
-            {
-                DataGridViewRow row = dvgAlimentos.Rows[e.RowIndex];
-                txtId.Text = row.Cells["id"].Value.ToString();
-                txtNombre.Text = row.Cells["nombre"].Value.ToString();
-                txtPrecio.Text = row.Cells["precio"].Value.ToString();
-                txtCantidad.Text = row.Cells["cantidad"].Value.ToString();
-            }
+            
         }
     }
 }
