@@ -53,7 +53,7 @@ namespace PresentationLayer
                 !int.TryParse(txtCantidad.Text, out cantidad))
             {
                 MessageBox.Show("Por favor, complete todos los campos correctamente");
-                return; 
+                return;
             }
 
             EntidadesElectricos entidadesElectricos = new EntidadesElectricos
@@ -70,7 +70,7 @@ namespace PresentationLayer
             }
             else
             {
-               
+
                 if (dvgElectricos.SelectedRows.Count > 0)
                 {
                     int id = int.Parse(dvgElectricos.CurrentRow.Cells[0].Value.ToString());
@@ -81,20 +81,20 @@ namespace PresentationLayer
             }
 
             CargarElectricos();
-            LimpiarCampos(); 
-            nuevo = true; 
-        
-    }
+            LimpiarCampos();
+            nuevo = true;
+
+        }
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
             if (dvgElectricos.SelectedRows.Count > 0)
             {
-                txtNombre.Text = dvgElectricos.CurrentRow.Cells[1].Value.ToString(); 
-                txtPrecio.Text = dvgElectricos.CurrentRow.Cells[2].Value.ToString(); 
+                txtNombre.Text = dvgElectricos.CurrentRow.Cells[1].Value.ToString();
+                txtPrecio.Text = dvgElectricos.CurrentRow.Cells[2].Value.ToString();
                 txtCantidad.Text = dvgElectricos.CurrentRow.Cells[3].Value.ToString();
 
-                nuevo = false; 
+                nuevo = false;
             }
             else
             {
@@ -105,7 +105,7 @@ namespace PresentationLayer
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            if(dvgElectricos.SelectedRows.Count < 1)
+            if (dvgElectricos.SelectedRows.Count < 1)
             {
                 MessageBox.Show("Selecciona una fila");
             }
@@ -114,7 +114,7 @@ namespace PresentationLayer
                 var borrarFila = new DialogResult();
                 borrarFila = MessageBox.Show("Está seguro que desea eliminar el dato?", "Confirmar", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
-                if(borrarFila == DialogResult.Yes)
+                if (borrarFila == DialogResult.Yes)
                 {
                     int id = int.Parse(dvgElectricos.CurrentRow.Cells[0].Value.ToString());
                     _electricosBD.EliminarElectricos(id);
@@ -125,7 +125,7 @@ namespace PresentationLayer
 
         private void dvgElectricos_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            
+
         }
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ElectricosForm));
             groupBox1 = new GroupBox();
             btnEliminar = new Button();
             btnGuardar = new Button();
@@ -47,6 +48,7 @@
             // 
             // groupBox1
             // 
+            groupBox1.BackColor = Color.Transparent;
             groupBox1.Controls.Add(btnEliminar);
             groupBox1.Controls.Add(btnGuardar);
             groupBox1.Controls.Add(btnModificar);
@@ -58,12 +60,12 @@
             groupBox1.Controls.Add(label3);
             groupBox1.Controls.Add(label2);
             groupBox1.Controls.Add(label1);
-            groupBox1.Location = new Point(12, 12);
+            groupBox1.Location = new Point(16, 12);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(330, 345);
             groupBox1.TabIndex = 2;
             groupBox1.TabStop = false;
-            groupBox1.Text = "Productos de Alimentacion";
+            groupBox1.Text = "Productos Electricos";
             // 
             // btnEliminar
             // 
@@ -126,43 +128,51 @@
             // label4
             // 
             label4.AutoSize = true;
+            label4.BackColor = Color.White;
+            label4.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold);
             label4.Location = new Point(28, 152);
             label4.Name = "label4";
-            label4.Size = new Size(55, 15);
+            label4.Size = new Size(101, 30);
             label4.TabIndex = 3;
             label4.Text = "Cantidad";
             // 
             // label3
             // 
             label3.AutoSize = true;
+            label3.BackColor = Color.White;
+            label3.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3.Location = new Point(28, 115);
             label3.Name = "label3";
-            label3.Size = new Size(40, 15);
+            label3.Size = new Size(74, 30);
             label3.TabIndex = 2;
             label3.Text = "Precio";
             // 
             // label2
             // 
             label2.AutoSize = true;
+            label2.BackColor = SystemColors.ButtonHighlight;
+            label2.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold);
             label2.Location = new Point(28, 75);
             label2.Name = "label2";
-            label2.Size = new Size(51, 15);
+            label2.Size = new Size(94, 30);
             label2.TabIndex = 1;
             label2.Text = "Nombre";
             // 
             // label1
             // 
             label1.AutoSize = true;
+            label1.BackColor = Color.White;
+            label1.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold);
             label1.Location = new Point(28, 41);
             label1.Name = "label1";
-            label1.Size = new Size(17, 15);
+            label1.Size = new Size(33, 30);
             label1.TabIndex = 0;
             label1.Text = "Id";
             // 
             // dvgElectricos
             // 
             dvgElectricos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dvgElectricos.Location = new Point(352, 24);
+            dvgElectricos.Location = new Point(356, 24);
             dvgElectricos.Name = "dvgElectricos";
             dvgElectricos.Size = new Size(512, 333);
             dvgElectricos.TabIndex = 3;
@@ -172,6 +182,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(894, 450);
             Controls.Add(dvgElectricos);
             Controls.Add(groupBox1);

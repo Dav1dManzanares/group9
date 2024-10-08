@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AlimentosForm));
             groupBox1 = new GroupBox();
             btnEliminar = new Button();
             btnGuardar = new Button();
@@ -47,6 +48,7 @@
             // 
             // groupBox1
             // 
+            groupBox1.BackColor = Color.Transparent;
             groupBox1.Controls.Add(btnEliminar);
             groupBox1.Controls.Add(btnGuardar);
             groupBox1.Controls.Add(btnModificar);
@@ -58,7 +60,7 @@
             groupBox1.Controls.Add(label3);
             groupBox1.Controls.Add(label2);
             groupBox1.Controls.Add(label1);
-            groupBox1.Location = new Point(22, 12);
+            groupBox1.Location = new Point(22, 37);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(330, 345);
             groupBox1.TabIndex = 1;
@@ -126,43 +128,51 @@
             // label4
             // 
             label4.AutoSize = true;
+            label4.BackColor = Color.White;
+            label4.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold);
             label4.Location = new Point(28, 152);
             label4.Name = "label4";
-            label4.Size = new Size(55, 15);
+            label4.Size = new Size(101, 30);
             label4.TabIndex = 3;
             label4.Text = "Cantidad";
             // 
             // label3
             // 
             label3.AutoSize = true;
+            label3.BackColor = Color.White;
+            label3.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold);
             label3.Location = new Point(28, 115);
             label3.Name = "label3";
-            label3.Size = new Size(40, 15);
+            label3.Size = new Size(74, 30);
             label3.TabIndex = 2;
             label3.Text = "Precio";
             // 
             // label2
             // 
             label2.AutoSize = true;
+            label2.BackColor = Color.White;
+            label2.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold);
             label2.Location = new Point(28, 75);
             label2.Name = "label2";
-            label2.Size = new Size(51, 15);
+            label2.Size = new Size(94, 30);
             label2.TabIndex = 1;
             label2.Text = "Nombre";
             // 
             // label1
             // 
             label1.AutoSize = true;
+            label1.BackColor = Color.White;
+            label1.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold);
             label1.Location = new Point(28, 41);
             label1.Name = "label1";
-            label1.Size = new Size(17, 15);
+            label1.Size = new Size(33, 30);
             label1.TabIndex = 0;
             label1.Text = "Id";
             // 
             // dvgAlimentos
             // 
             dvgAlimentos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dvgAlimentos.Location = new Point(363, 20);
+            dvgAlimentos.Location = new Point(363, 45);
             dvgAlimentos.Name = "dvgAlimentos";
             dvgAlimentos.Size = new Size(514, 337);
             dvgAlimentos.TabIndex = 2;
@@ -172,6 +182,8 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(889, 450);
             Controls.Add(dvgAlimentos);
             Controls.Add(groupBox1);
