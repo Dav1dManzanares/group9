@@ -36,11 +36,9 @@
             txtCantidad = new TextBox();
             txtPrecio = new TextBox();
             txtNombre = new TextBox();
-            txtId = new TextBox();
             label4 = new Label();
             label3 = new Label();
             label2 = new Label();
-            label1 = new Label();
             dvgMuebles = new DataGridView();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dvgMuebles).BeginInit();
@@ -55,11 +53,9 @@
             groupBox1.Controls.Add(txtCantidad);
             groupBox1.Controls.Add(txtPrecio);
             groupBox1.Controls.Add(txtNombre);
-            groupBox1.Controls.Add(txtId);
             groupBox1.Controls.Add(label4);
             groupBox1.Controls.Add(label3);
             groupBox1.Controls.Add(label2);
-            groupBox1.Controls.Add(label1);
             groupBox1.Location = new Point(24, 20);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(330, 345);
@@ -69,7 +65,7 @@
             // 
             // btnEliminar
             // 
-            btnEliminar.Location = new Point(28, 281);
+            btnEliminar.Location = new Point(29, 260);
             btnEliminar.Name = "btnEliminar";
             btnEliminar.Size = new Size(245, 38);
             btnEliminar.TabIndex = 10;
@@ -79,7 +75,7 @@
             // 
             // btnGuardar
             // 
-            btnGuardar.Location = new Point(28, 193);
+            btnGuardar.Location = new Point(29, 172);
             btnGuardar.Name = "btnGuardar";
             btnGuardar.Size = new Size(245, 38);
             btnGuardar.TabIndex = 9;
@@ -89,7 +85,7 @@
             // 
             // btnModificar
             // 
-            btnModificar.Location = new Point(28, 237);
+            btnModificar.Location = new Point(29, 216);
             btnModificar.Name = "btnModificar";
             btnModificar.Size = new Size(245, 38);
             btnModificar.TabIndex = 8;
@@ -99,36 +95,29 @@
             // 
             // txtCantidad
             // 
-            txtCantidad.Location = new Point(152, 152);
+            txtCantidad.Location = new Point(153, 131);
             txtCantidad.Name = "txtCantidad";
             txtCantidad.Size = new Size(121, 23);
             txtCantidad.TabIndex = 7;
             // 
             // txtPrecio
             // 
-            txtPrecio.Location = new Point(152, 115);
+            txtPrecio.Location = new Point(153, 94);
             txtPrecio.Name = "txtPrecio";
             txtPrecio.Size = new Size(121, 23);
             txtPrecio.TabIndex = 6;
             // 
             // txtNombre
             // 
-            txtNombre.Location = new Point(152, 75);
+            txtNombre.Location = new Point(153, 54);
             txtNombre.Name = "txtNombre";
             txtNombre.Size = new Size(121, 23);
             txtNombre.TabIndex = 5;
             // 
-            // txtId
-            // 
-            txtId.Location = new Point(152, 38);
-            txtId.Name = "txtId";
-            txtId.Size = new Size(121, 23);
-            txtId.TabIndex = 4;
-            // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(28, 152);
+            label4.Location = new Point(29, 131);
             label4.Name = "label4";
             label4.Size = new Size(55, 15);
             label4.TabIndex = 3;
@@ -137,7 +126,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(28, 115);
+            label3.Location = new Point(29, 94);
             label3.Name = "label3";
             label3.Size = new Size(40, 15);
             label3.TabIndex = 2;
@@ -146,20 +135,11 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(28, 75);
+            label2.Location = new Point(29, 54);
             label2.Name = "label2";
             label2.Size = new Size(51, 15);
             label2.TabIndex = 1;
             label2.Text = "Nombre";
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(28, 41);
-            label1.Name = "label1";
-            label1.Size = new Size(17, 15);
-            label1.TabIndex = 0;
-            label1.Text = "Id";
             // 
             // dvgMuebles
             // 
@@ -191,11 +171,9 @@
         #endregion
 
         private GroupBox groupBox1;
-        private Label label1;
         private TextBox txtCantidad;
         private TextBox txtPrecio;
         private TextBox txtNombre;
-        private TextBox txtId;
         private Label label4;
         private Label label3;
         private Label label2;

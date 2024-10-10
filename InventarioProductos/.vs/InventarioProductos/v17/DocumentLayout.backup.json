@@ -3,24 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\MINEDUCYT\\Desktop\\group9\\InventarioProductos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B3B32830-36F4-4ECA-9E25-B6D4A80E3673}|PresentationLayer\\PresentationLayer.csproj|c:\\users\\mineducyt\\desktop\\group9\\inventarioproductos\\presentationlayer\\vistaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B3B32830-36F4-4ECA-9E25-B6D4A80E3673}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\vistaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{B3B32830-36F4-4ECA-9E25-B6D4A80E3673}|PresentationLayer\\PresentationLayer.csproj|c:\\users\\mineducyt\\desktop\\group9\\inventarioproductos\\presentationlayer\\alimentosform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3B32830-36F4-4ECA-9E25-B6D4A80E3673}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\alimentosform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B3B32830-36F4-4ECA-9E25-B6D4A80E3673}|PresentationLayer\\PresentationLayer.csproj|c:\\users\\mineducyt\\desktop\\group9\\inventarioproductos\\presentationlayer\\alimentosform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B3B32830-36F4-4ECA-9E25-B6D4A80E3673}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\alimentosform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B3B32830-36F4-4ECA-9E25-B6D4A80E3673}|PresentationLayer\\PresentationLayer.csproj|c:\\users\\mineducyt\\desktop\\group9\\inventarioproductos\\presentationlayer\\electricosform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B3B32830-36F4-4ECA-9E25-B6D4A80E3673}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\electricosform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{B3B32830-36F4-4ECA-9E25-B6D4A80E3673}|PresentationLayer\\PresentationLayer.csproj|c:\\users\\mineducyt\\desktop\\group9\\inventarioproductos\\presentationlayer\\mueblesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3B32830-36F4-4ECA-9E25-B6D4A80E3673}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\mueblesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B3B32830-36F4-4ECA-9E25-B6D4A80E3673}|PresentationLayer\\PresentationLayer.csproj|c:\\users\\mineducyt\\desktop\\group9\\inventarioproductos\\presentationlayer\\electricosform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B3B32830-36F4-4ECA-9E25-B6D4A80E3673}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\electricosform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B3B32830-36F4-4ECA-9E25-B6D4A80E3673}|PresentationLayer\\PresentationLayer.csproj|c:\\users\\mineducyt\\desktop\\group9\\inventarioproductos\\presentationlayer\\mueblesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{B3B32830-36F4-4ECA-9E25-B6D4A80E3673}|PresentationLayer\\PresentationLayer.csproj|C:\\Users\\MINEDUCYT\\Desktop\\group9\\InventarioProductos\\presentationlayer\\mueblesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B3B32830-36F4-4ECA-9E25-B6D4A80E3673}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\mueblesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3B32830-36F4-4ECA-9E25-B6D4A80E3673}|PresentationLayer\\PresentationLayer.csproj|C:\\Users\\MINEDUCYT\\Desktop\\group9\\InventarioProductos\\presentationlayer\\alimentosform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B3B32830-36F4-4ECA-9E25-B6D4A80E3673}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\alimentosform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3B32830-36F4-4ECA-9E25-B6D4A80E3673}|PresentationLayer\\PresentationLayer.csproj|C:\\Users\\MINEDUCYT\\Desktop\\group9\\InventarioProductos\\presentationlayer\\electricosform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B3B32830-36F4-4ECA-9E25-B6D4A80E3673}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\electricosform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3B32830-36F4-4ECA-9E25-B6D4A80E3673}|PresentationLayer\\PresentationLayer.csproj|c:\\users\\mineducyt\\desktop\\group9\\inventarioproductos\\presentationlayer\\vistaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B3B32830-36F4-4ECA-9E25-B6D4A80E3673}|PresentationLayer\\PresentationLayer.csproj|solutionrelative:presentationlayer\\vistaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,23 +38,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "VistaForm.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\group9\\InventarioProductos\\PresentationLayer\\VistaForm.cs",
-              "RelativeDocumentMoniker": "PresentationLayer\\VistaForm.cs",
-              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\group9\\InventarioProductos\\PresentationLayer\\VistaForm.cs [Dise\u00F1o]",
-              "RelativeToolTip": "PresentationLayer\\VistaForm.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T04:25:23.702Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "AlimentosForm.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\group9\\InventarioProductos\\PresentationLayer\\AlimentosForm.cs",
               "RelativeDocumentMoniker": "PresentationLayer\\AlimentosForm.cs",
@@ -58,20 +54,58 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "ElectricosForm.cs",
               "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\group9\\InventarioProductos\\PresentationLayer\\ElectricosForm.cs",
               "RelativeDocumentMoniker": "PresentationLayer\\ElectricosForm.cs",
               "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\group9\\InventarioProductos\\PresentationLayer\\ElectricosForm.cs",
               "RelativeToolTip": "PresentationLayer\\ElectricosForm.cs",
-              "ViewState": "AgIAAHUAAAAAAAAAAAAkwIEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAIwFcAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-08T04:19:40.634Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "AlimentosForm.cs",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\group9\\InventarioProductos\\PresentationLayer\\AlimentosForm.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\AlimentosForm.cs",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\group9\\InventarioProductos\\PresentationLayer\\AlimentosForm.cs",
+              "RelativeToolTip": "PresentationLayer\\AlimentosForm.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAQwBgAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T19:42:25.976Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MueblesForm.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\group9\\InventarioProductos\\PresentationLayer\\MueblesForm.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\MueblesForm.cs",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\group9\\InventarioProductos\\PresentationLayer\\MueblesForm.cs [Dise\u00F1o]",
+              "RelativeToolTip": "PresentationLayer\\MueblesForm.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-08T02:34:10.32Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MueblesForm.cs",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\group9\\InventarioProductos\\PresentationLayer\\MueblesForm.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\MueblesForm.cs",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\group9\\InventarioProductos\\PresentationLayer\\MueblesForm.cs",
+              "RelativeToolTip": "PresentationLayer\\MueblesForm.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAwwDUAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T19:32:22.739Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "ElectricosForm.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\group9\\InventarioProductos\\PresentationLayer\\ElectricosForm.cs",
               "RelativeDocumentMoniker": "PresentationLayer\\ElectricosForm.cs",
@@ -83,14 +117,14 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MueblesForm.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\group9\\InventarioProductos\\PresentationLayer\\MueblesForm.cs",
-              "RelativeDocumentMoniker": "PresentationLayer\\MueblesForm.cs",
-              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\group9\\InventarioProductos\\PresentationLayer\\MueblesForm.cs [Dise\u00F1o]",
-              "RelativeToolTip": "PresentationLayer\\MueblesForm.cs [Dise\u00F1o]",
+              "DocumentIndex": 6,
+              "Title": "VistaForm.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\MINEDUCYT\\Desktop\\group9\\InventarioProductos\\PresentationLayer\\VistaForm.cs",
+              "RelativeDocumentMoniker": "PresentationLayer\\VistaForm.cs",
+              "ToolTip": "C:\\Users\\MINEDUCYT\\Desktop\\group9\\InventarioProductos\\PresentationLayer\\VistaForm.cs [Dise\u00F1o]",
+              "RelativeToolTip": "PresentationLayer\\VistaForm.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T02:34:10.32Z",
+              "WhenOpened": "2024-10-08T04:25:23.702Z",
               "EditorCaption": " [Dise\u00F1o]"
             }
           ]

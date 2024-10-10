@@ -47,12 +47,16 @@ namespace PresentationLayer
             float precio;
             int cantidad;
 
-            // Validaciones
-            if (string.IsNullOrEmpty(nombre) ||
-                !float.TryParse(txtPrecio.Text, out precio) ||
-                !int.TryParse(txtCantidad.Text, out cantidad))
+            if (System.Text.RegularExpressions.Regex.IsMatch(nombre, @"\d"))
             {
-                MessageBox.Show("Por favor, complete todos los campos correctamente");
+                MessageBox.Show("El nombre no puede contener números.");
+                return;
+            }
+
+            if (!float.TryParse(txtPrecio.Text, out precio) || precio < 1 ||
+                !int.TryParse(txtCantidad.Text, out cantidad) || cantidad < 1)
+            {
+                MessageBox.Show("precio o cantidad invalido");
                 return;
             }
 
@@ -70,7 +74,6 @@ namespace PresentationLayer
             }
             else
             {
-
                 if (dvgElectricos.SelectedRows.Count > 0)
                 {
                     int id = int.Parse(dvgElectricos.CurrentRow.Cells[0].Value.ToString());
@@ -83,7 +86,6 @@ namespace PresentationLayer
             CargarElectricos();
             LimpiarCampos();
             nuevo = true;
-
         }
 
         private void btnModificar_Click(object sender, EventArgs e)
