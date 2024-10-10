@@ -56,18 +56,21 @@
             groupBox1.Controls.Add(label4);
             groupBox1.Controls.Add(label3);
             groupBox1.Controls.Add(label2);
-            groupBox1.Location = new Point(22, 37);
+            groupBox1.Location = new Point(25, 49);
+            groupBox1.Margin = new Padding(3, 4, 3, 4);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(330, 345);
+            groupBox1.Padding = new Padding(3, 4, 3, 4);
+            groupBox1.Size = new Size(377, 460);
             groupBox1.TabIndex = 1;
             groupBox1.TabStop = false;
             groupBox1.Text = "Productos de Alimentacion";
             // 
             // btnEliminar
             // 
-            btnEliminar.Location = new Point(32, 255);
+            btnEliminar.Location = new Point(37, 340);
+            btnEliminar.Margin = new Padding(3, 4, 3, 4);
             btnEliminar.Name = "btnEliminar";
-            btnEliminar.Size = new Size(245, 38);
+            btnEliminar.Size = new Size(280, 51);
             btnEliminar.TabIndex = 10;
             btnEliminar.Text = "Eliminar";
             btnEliminar.UseVisualStyleBackColor = true;
@@ -75,9 +78,10 @@
             // 
             // btnGuardar
             // 
-            btnGuardar.Location = new Point(32, 167);
+            btnGuardar.Location = new Point(37, 223);
+            btnGuardar.Margin = new Padding(3, 4, 3, 4);
             btnGuardar.Name = "btnGuardar";
-            btnGuardar.Size = new Size(245, 38);
+            btnGuardar.Size = new Size(280, 51);
             btnGuardar.TabIndex = 9;
             btnGuardar.Text = "Guardar";
             btnGuardar.UseVisualStyleBackColor = true;
@@ -85,9 +89,10 @@
             // 
             // btnModificar
             // 
-            btnModificar.Location = new Point(32, 211);
+            btnModificar.Location = new Point(37, 281);
+            btnModificar.Margin = new Padding(3, 4, 3, 4);
             btnModificar.Name = "btnModificar";
-            btnModificar.Size = new Size(245, 38);
+            btnModificar.Size = new Size(280, 51);
             btnModificar.TabIndex = 8;
             btnModificar.Text = "Modificar";
             btnModificar.UseVisualStyleBackColor = true;
@@ -95,76 +100,79 @@
             // 
             // txtCantidad
             // 
-            txtCantidad.Location = new Point(156, 126);
+            txtCantidad.Location = new Point(178, 168);
+            txtCantidad.Margin = new Padding(3, 4, 3, 4);
             txtCantidad.Name = "txtCantidad";
-            txtCantidad.Size = new Size(121, 23);
+            txtCantidad.Size = new Size(138, 27);
             txtCantidad.TabIndex = 7;
             // 
             // txtPrecio
             // 
-            txtPrecio.Location = new Point(156, 89);
+            txtPrecio.Location = new Point(178, 119);
+            txtPrecio.Margin = new Padding(3, 4, 3, 4);
             txtPrecio.Name = "txtPrecio";
-            txtPrecio.Size = new Size(121, 23);
+            txtPrecio.Size = new Size(138, 27);
             txtPrecio.TabIndex = 6;
             // 
             // txtNombre
             // 
-            txtNombre.Location = new Point(156, 49);
+            txtNombre.Location = new Point(178, 65);
+            txtNombre.Margin = new Padding(3, 4, 3, 4);
             txtNombre.Name = "txtNombre";
-            txtNombre.Size = new Size(121, 23);
+            txtNombre.Size = new Size(138, 27);
             txtNombre.TabIndex = 5;
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.BackColor = Color.White;
             label4.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold);
-            label4.Location = new Point(32, 126);
+            label4.Location = new Point(37, 168);
             label4.Name = "label4";
-            label4.Size = new Size(101, 30);
+            label4.Size = new Size(133, 37);
             label4.TabIndex = 3;
             label4.Text = "Cantidad";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.BackColor = Color.White;
             label3.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold);
-            label3.Location = new Point(32, 89);
+            label3.Location = new Point(37, 119);
             label3.Name = "label3";
-            label3.Size = new Size(74, 30);
+            label3.Size = new Size(98, 37);
             label3.TabIndex = 2;
             label3.Text = "Precio";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.BackColor = Color.White;
             label2.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold);
-            label2.Location = new Point(32, 49);
+            label2.Location = new Point(37, 65);
             label2.Name = "label2";
-            label2.Size = new Size(94, 30);
+            label2.Size = new Size(123, 37);
             label2.TabIndex = 1;
             label2.Text = "Nombre";
             // 
             // dvgAlimentos
             // 
             dvgAlimentos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dvgAlimentos.Location = new Point(363, 45);
+            dvgAlimentos.Location = new Point(415, 60);
+            dvgAlimentos.Margin = new Padding(3, 4, 3, 4);
             dvgAlimentos.Name = "dvgAlimentos";
-            dvgAlimentos.Size = new Size(514, 337);
+            dvgAlimentos.RowHeadersWidth = 51;
+            dvgAlimentos.Size = new Size(555, 449);
             dvgAlimentos.TabIndex = 2;
             dvgAlimentos.CellContentClick += dvgAlimentos_CellContentClick;
             // 
             // AlimentosForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(889, 450);
+            ClientSize = new Size(1016, 600);
             Controls.Add(dvgAlimentos);
             Controls.Add(groupBox1);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "AlimentosForm";
             Text = "AlimentosForm";
             groupBox1.ResumeLayout(false);

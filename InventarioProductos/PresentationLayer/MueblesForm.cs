@@ -69,7 +69,7 @@ namespace PresentationLayer
 
             if (nuevo)
             {
-                _mueblesServicio.GuardarElectricos(entidadesMuebles);
+                _mueblesServicio.GuardarMuebles(entidadesMuebles);
                 MessageBox.Show("Registro guardado correctamente.");
             }
             else
@@ -78,7 +78,7 @@ namespace PresentationLayer
                 {
                     int id = int.Parse(dvgMuebles.CurrentRow.Cells[0].Value.ToString());
                     entidadesMuebles.id = id;
-                    _mueblesServicio.ModificarElectricos(entidadesMuebles);
+                    _mueblesServicio.ModificarMuebles(entidadesMuebles);
                     MessageBox.Show("Registro modificado correctamente.");
                 }
             }
@@ -118,7 +118,7 @@ namespace PresentationLayer
                 if (borrarFila == DialogResult.Yes)
                 {
                     int id = int.Parse(dvgMuebles.CurrentRow.Cells[0].Value.ToString());
-                    _mueblesBD.EliminarAlimento(id);
+                    _mueblesBD.EliminarMuebles(id);
                     CargarMuebles();
                 }
             }

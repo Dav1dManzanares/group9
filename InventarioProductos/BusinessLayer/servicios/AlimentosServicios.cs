@@ -16,12 +16,12 @@ namespace BusinessLayer.servicios
             _alimentosBD = new AlimentosBD();
         }
 
-        public void GuardarElectricos(EntidadesAlimentos entidadesAlimentos)
+        public void GuardarAlimentos(EntidadesAlimentos entidadesAlimentos)
         {
             _alimentosBD.InsertarAlimentos(entidadesAlimentos);
         }
 
-        public void ModificarElectricos(EntidadesAlimentos entidadesAlimentos)
+        public void ModificarAlimentos(EntidadesAlimentos entidadesAlimentos)
         {
             _alimentosBD.ActualizarAlimento(entidadesAlimentos);
         }

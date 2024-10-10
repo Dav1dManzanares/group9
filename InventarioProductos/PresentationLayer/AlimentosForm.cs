@@ -67,7 +67,7 @@ namespace PresentationLayer
 
             if (nuevo)
             {
-                _alimentosServicios.GuardarElectricos(entidadesAlimentos);
+                _alimentosServicios.GuardarAlimentos(entidadesAlimentos);
                 MessageBox.Show("Registro guardado correctamente.");
             }
             else
@@ -76,7 +76,7 @@ namespace PresentationLayer
                 {
                     int id = int.Parse(dvgAlimentos.CurrentRow.Cells[0].Value.ToString());
                     entidadesAlimentos.id = id;
-                    _alimentosServicios.ModificarElectricos(entidadesAlimentos);
+                    _alimentosServicios.ModificarAlimentos(entidadesAlimentos);
                     MessageBox.Show("Registro modificado correctamente.");
                 }
             }

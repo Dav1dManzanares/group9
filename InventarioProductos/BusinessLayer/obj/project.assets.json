@@ -1722,19 +1722,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\MINEDUCYT\\.nuget\\packages\\": {}
+    "C:\\Users\\DAVID.M\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\MINEDUCYT\\Desktop\\group9\\InventarioProductos\\BusinessLayer\\BusinessLayer.csproj",
+      "projectUniqueName": "C:\\Users\\DAVID.M\\group9\\InventarioProductos\\BusinessLayer\\BusinessLayer.csproj",
       "projectName": "BusinessLayer",
-      "projectPath": "C:\\Users\\MINEDUCYT\\Desktop\\group9\\InventarioProductos\\BusinessLayer\\BusinessLayer.csproj",
-      "packagesPath": "C:\\Users\\MINEDUCYT\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\MINEDUCYT\\Desktop\\group9\\InventarioProductos\\BusinessLayer\\obj\\",
+      "projectPath": "C:\\Users\\DAVID.M\\group9\\InventarioProductos\\BusinessLayer\\BusinessLayer.csproj",
+      "packagesPath": "C:\\Users\\DAVID.M\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\DAVID.M\\group9\\InventarioProductos\\BusinessLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\MINEDUCYT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\DAVID.M\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1742,18 +1742,17 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\MINEDUCYT\\Desktop\\group9\\InventarioProductos\\CommonLayer\\CommonLayer.csproj": {
-              "projectPath": "C:\\Users\\MINEDUCYT\\Desktop\\group9\\InventarioProductos\\CommonLayer\\CommonLayer.csproj"
+            "C:\\Users\\DAVID.M\\group9\\InventarioProductos\\CommonLayer\\CommonLayer.csproj": {
+              "projectPath": "C:\\Users\\DAVID.M\\group9\\InventarioProductos\\CommonLayer\\CommonLayer.csproj"
             },
-            "C:\\Users\\MINEDUCYT\\Desktop\\group9\\InventarioProductos\\DataAccessLayer\\DataAccessLayer.csproj": {
-              "projectPath": "C:\\Users\\MINEDUCYT\\Desktop\\group9\\InventarioProductos\\DataAccessLayer\\DataAccessLayer.csproj"
+            "C:\\Users\\DAVID.M\\group9\\InventarioProductos\\DataAccessLayer\\DataAccessLayer.csproj": {
+              "projectPath": "C:\\Users\\DAVID.M\\group9\\InventarioProductos\\DataAccessLayer\\DataAccessLayer.csproj"
             }
           }
         }

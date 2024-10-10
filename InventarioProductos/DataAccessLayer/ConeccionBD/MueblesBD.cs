@@ -61,7 +61,7 @@ namespace DataAccessLayer
         }
 
 
-        public void EliminarAlimento(int id)
+        public void EliminarMuebles(int id)
         {
             using (SqlConnection con = _conexion.GetCconeccion())
             {

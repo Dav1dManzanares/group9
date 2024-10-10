@@ -119,3 +119,8 @@ C:\Users\MINEDUCYT\Desktop\group9\InventarioProductos\PresentationLayer\bin\Debu
 C:\Users\MINEDUCYT\Desktop\group9\InventarioProductos\PresentationLayer\bin\Debug\net8.0-windows\BusinessLayer.pdb
 C:\Users\MINEDUCYT\Desktop\group9\InventarioProductos\PresentationLayer\bin\Debug\net8.0-windows\CommonLayer.pdb
 C:\Users\MINEDUCYT\Desktop\group9\InventarioProductos\PresentationLayer\obj\Debug\net8.0-windows\PresentationLayer.Properties.Resources.resources
+C:\Users\DAVID.M\group9\InventarioProductos\PresentationLayer\bin\Debug\net8.0-windows\BusinessLayer.dll
+C:\Users\DAVID.M\group9\InventarioProductos\PresentationLayer\bin\Debug\net8.0-windows\CommonLayer.dll
+C:\Users\DAVID.M\group9\InventarioProductos\PresentationLayer\bin\Debug\net8.0-windows\BusinessLayer.pdb
+C:\Users\DAVID.M\group9\InventarioProductos\PresentationLayer\bin\Debug\net8.0-windows\CommonLayer.pdb
+C:\Users\DAVID.M\group9\InventarioProductos\PresentationLayer\obj\Debug\net8.0-windows\PresentationLayer.Properties.Resources.resources

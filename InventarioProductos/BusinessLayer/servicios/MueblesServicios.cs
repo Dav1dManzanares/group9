@@ -18,12 +18,12 @@ namespace BusinessLayer.servicios
             _mueblesBD = new MueblesBD();
         }
 
-        public void GuardarElectricos(EntidadesMuebles entidadesMuebles)
+        public void GuardarMuebles(EntidadesMuebles entidadesMuebles)
         {
             _mueblesBD.InsertarMuebles(entidadesMuebles);
         }
 
-        public void ModificarElectricos(EntidadesMuebles entidadesMuebles)
+        public void ModificarMuebles(EntidadesMuebles entidadesMuebles)
         {
             _mueblesBD.ActualizarMuebles(entidadesMuebles);
         }

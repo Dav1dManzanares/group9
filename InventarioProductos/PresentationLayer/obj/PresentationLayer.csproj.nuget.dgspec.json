@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MINEDUCYT\\Desktop\\group9\\InventarioProductos\\PresentationLayer\\PresentationLayer.csproj": {}
+    "C:\\Users\\DAVID.M\\group9\\InventarioProductos\\PresentationLayer\\PresentationLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MINEDUCYT\\Desktop\\group9\\InventarioProductos\\BusinessLayer\\BusinessLayer.csproj": {
+    "C:\\Users\\DAVID.M\\group9\\InventarioProductos\\BusinessLayer\\BusinessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MINEDUCYT\\Desktop\\group9\\InventarioProductos\\BusinessLayer\\BusinessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\DAVID.M\\group9\\InventarioProductos\\BusinessLayer\\BusinessLayer.csproj",
         "projectName": "BusinessLayer",
-        "projectPath": "C:\\Users\\MINEDUCYT\\Desktop\\group9\\InventarioProductos\\BusinessLayer\\BusinessLayer.csproj",
-        "packagesPath": "C:\\Users\\MINEDUCYT\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MINEDUCYT\\Desktop\\group9\\InventarioProductos\\BusinessLayer\\obj\\",
+        "projectPath": "C:\\Users\\DAVID.M\\group9\\InventarioProductos\\BusinessLayer\\BusinessLayer.csproj",
+        "packagesPath": "C:\\Users\\DAVID.M\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\DAVID.M\\group9\\InventarioProductos\\BusinessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\MINEDUCYT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DAVID.M\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,18 +22,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\MINEDUCYT\\Desktop\\group9\\InventarioProductos\\CommonLayer\\CommonLayer.csproj": {
-                "projectPath": "C:\\Users\\MINEDUCYT\\Desktop\\group9\\InventarioProductos\\CommonLayer\\CommonLayer.csproj"
+              "C:\\Users\\DAVID.M\\group9\\InventarioProductos\\CommonLayer\\CommonLayer.csproj": {
+                "projectPath": "C:\\Users\\DAVID.M\\group9\\InventarioProductos\\CommonLayer\\CommonLayer.csproj"
               },
-              "C:\\Users\\MINEDUCYT\\Desktop\\group9\\InventarioProductos\\DataAccessLayer\\DataAccessLayer.csproj": {
-                "projectPath": "C:\\Users\\MINEDUCYT\\Desktop\\group9\\InventarioProductos\\DataAccessLayer\\DataAccessLayer.csproj"
+              "C:\\Users\\DAVID.M\\group9\\InventarioProductos\\DataAccessLayer\\DataAccessLayer.csproj": {
+                "projectPath": "C:\\Users\\DAVID.M\\group9\\InventarioProductos\\DataAccessLayer\\DataAccessLayer.csproj"
               }
             }
           }
@@ -72,17 +71,17 @@
         }
       }
     },
-    "C:\\Users\\MINEDUCYT\\Desktop\\group9\\InventarioProductos\\CommonLayer\\CommonLayer.csproj": {
+    "C:\\Users\\DAVID.M\\group9\\InventarioProductos\\CommonLayer\\CommonLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MINEDUCYT\\Desktop\\group9\\InventarioProductos\\CommonLayer\\CommonLayer.csproj",
+        "projectUniqueName": "C:\\Users\\DAVID.M\\group9\\InventarioProductos\\CommonLayer\\CommonLayer.csproj",
         "projectName": "CommonLayer",
-        "projectPath": "C:\\Users\\MINEDUCYT\\Desktop\\group9\\InventarioProductos\\CommonLayer\\CommonLayer.csproj",
-        "packagesPath": "C:\\Users\\MINEDUCYT\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MINEDUCYT\\Desktop\\group9\\InventarioProductos\\CommonLayer\\obj\\",
+        "projectPath": "C:\\Users\\DAVID.M\\group9\\InventarioProductos\\CommonLayer\\CommonLayer.csproj",
+        "packagesPath": "C:\\Users\\DAVID.M\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\DAVID.M\\group9\\InventarioProductos\\CommonLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\MINEDUCYT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DAVID.M\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -90,7 +89,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -133,17 +131,17 @@
         }
       }
     },
-    "C:\\Users\\MINEDUCYT\\Desktop\\group9\\InventarioProductos\\DataAccessLayer\\DataAccessLayer.csproj": {
+    "C:\\Users\\DAVID.M\\group9\\InventarioProductos\\DataAccessLayer\\DataAccessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MINEDUCYT\\Desktop\\group9\\InventarioProductos\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\DAVID.M\\group9\\InventarioProductos\\DataAccessLayer\\DataAccessLayer.csproj",
         "projectName": "DataAccessLayer",
-        "projectPath": "C:\\Users\\MINEDUCYT\\Desktop\\group9\\InventarioProductos\\DataAccessLayer\\DataAccessLayer.csproj",
-        "packagesPath": "C:\\Users\\MINEDUCYT\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MINEDUCYT\\Desktop\\group9\\InventarioProductos\\DataAccessLayer\\obj\\",
+        "projectPath": "C:\\Users\\DAVID.M\\group9\\InventarioProductos\\DataAccessLayer\\DataAccessLayer.csproj",
+        "packagesPath": "C:\\Users\\DAVID.M\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\DAVID.M\\group9\\InventarioProductos\\DataAccessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\MINEDUCYT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DAVID.M\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -151,15 +149,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\MINEDUCYT\\Desktop\\group9\\InventarioProductos\\CommonLayer\\CommonLayer.csproj": {
-                "projectPath": "C:\\Users\\MINEDUCYT\\Desktop\\group9\\InventarioProductos\\CommonLayer\\CommonLayer.csproj"
+              "C:\\Users\\DAVID.M\\group9\\InventarioProductos\\CommonLayer\\CommonLayer.csproj": {
+                "projectPath": "C:\\Users\\DAVID.M\\group9\\InventarioProductos\\CommonLayer\\CommonLayer.csproj"
               }
             }
           }
@@ -204,17 +201,17 @@
         }
       }
     },
-    "C:\\Users\\MINEDUCYT\\Desktop\\group9\\InventarioProductos\\PresentationLayer\\PresentationLayer.csproj": {
+    "C:\\Users\\DAVID.M\\group9\\InventarioProductos\\PresentationLayer\\PresentationLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MINEDUCYT\\Desktop\\group9\\InventarioProductos\\PresentationLayer\\PresentationLayer.csproj",
+        "projectUniqueName": "C:\\Users\\DAVID.M\\group9\\InventarioProductos\\PresentationLayer\\PresentationLayer.csproj",
         "projectName": "PresentationLayer",
-        "projectPath": "C:\\Users\\MINEDUCYT\\Desktop\\group9\\InventarioProductos\\PresentationLayer\\PresentationLayer.csproj",
-        "packagesPath": "C:\\Users\\MINEDUCYT\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MINEDUCYT\\Desktop\\group9\\InventarioProductos\\PresentationLayer\\obj\\",
+        "projectPath": "C:\\Users\\DAVID.M\\group9\\InventarioProductos\\PresentationLayer\\PresentationLayer.csproj",
+        "packagesPath": "C:\\Users\\DAVID.M\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\DAVID.M\\group9\\InventarioProductos\\PresentationLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\MINEDUCYT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DAVID.M\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -222,18 +219,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "C:\\Users\\MINEDUCYT\\Desktop\\group9\\InventarioProductos\\BusinessLayer\\BusinessLayer.csproj": {
-                "projectPath": "C:\\Users\\MINEDUCYT\\Desktop\\group9\\InventarioProductos\\BusinessLayer\\BusinessLayer.csproj"
+              "C:\\Users\\DAVID.M\\group9\\InventarioProductos\\BusinessLayer\\BusinessLayer.csproj": {
+                "projectPath": "C:\\Users\\DAVID.M\\group9\\InventarioProductos\\BusinessLayer\\BusinessLayer.csproj"
               },
-              "C:\\Users\\MINEDUCYT\\Desktop\\group9\\InventarioProductos\\DataAccessLayer\\DataAccessLayer.csproj": {
-                "projectPath": "C:\\Users\\MINEDUCYT\\Desktop\\group9\\InventarioProductos\\DataAccessLayer\\DataAccessLayer.csproj"
+              "C:\\Users\\DAVID.M\\group9\\InventarioProductos\\DataAccessLayer\\DataAccessLayer.csproj": {
+                "projectPath": "C:\\Users\\DAVID.M\\group9\\InventarioProductos\\DataAccessLayer\\DataAccessLayer.csproj"
               }
             }
           }
